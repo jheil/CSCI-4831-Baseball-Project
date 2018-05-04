@@ -1,6 +1,7 @@
 ### Catch Probability - an ingredient for new defensive baseball statistics
+#### A model (including home runs) based on bat speed and hit angle
 
-![](https://i.imgur.com/6bqBkFQ.png)
+![](https://i.imgur.com/homXGuA.png)
 
 There are many statistics for batting and pitching, but there aren't many defensive statistics.  The primary reason is that batters and pitchers have a clear outcome for every baseball 'event' - was a strike or ball thrown, was a hit made and what base movement occured.  But in defensive statistics, one of the only metrics is the 'error' (which is a very low probability event - about 1.5% of all balls hit into play in 2017 resulted in an error).  Yet there seems a lot of variability in outcomes of what fly balls and line-drives are caught, but no good metric to measure this.
 
@@ -20,10 +21,18 @@ This notebook outlines the activity to:
 3. Augment dataset with new columns
 4. Analyze augmented data set
 5. Prove that the new statcast metrics of launch and and launch speed were statistically valid
-6. Develop a model that forward predicts 'catch probability'
+6. Develop a model that forward predicts 'catch probability' base only on launch angle and hit speed
 7. Demonstrate catch probability in an application (this notebook).
 
 ![](https://i.imgur.com/IoB8SHX.png)
+
+![](https://i.imgur.com/3idix3k.png)
+
+![](https://i.imgur.com/JRN1tTn.png)
+
+![](https://i.imgur.com/UIxcmtR.png)
+
+![](https://i.imgur.com/ebUpdrz.png)
 
 Starting points:
 - __[pybaseball](https://github.com/jldbc/pybaseball/blob/master/pybaseball/statcast.py)__
